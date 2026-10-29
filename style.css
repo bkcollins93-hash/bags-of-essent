@@ -106,3 +106,44 @@ summary { cursor: pointer; color: var(--gold-light); font-weight: bold; }
   .card-image, .product-photo { height: 250px; }
   .btn { margin: 4px 4px 4px 0; }
 }
+/* BAGS OF ESSENT - LUXURY DESIGN UPDATE */
+
+:root {
+  --black: #171411;
+  --gold: #c5a15b;
+  --cream: #f8f5ef;
+  --white: #ffffff;
+  --text: #302b25;
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--black);
+  font-family: Georgia, serif;
+  line-height: 1.2;
+}
+
+header, .header, .site-header {
+  background: var(--black);
+  color: var(--white);
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+button, .button, .btn {
+  background: var(--gold);
+  color: var(--black);
+  border: none;
+  border-radius: 3px;
+  padding: 12px 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
