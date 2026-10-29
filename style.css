@@ -147,3 +147,63 @@ button, .button, .btn {
   font-weight: bold;
   text-decoration: none;
 }
+/* PRODUCT DISPLAY IMPROVEMENTS */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e8dfd0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-photo {
+  width: 100%;
+  height: 240px;
+  background: #f1ede5;
+  overflow: hidden;
+}
+
+.product-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-info .code {
+  color: #a17b37;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.product-info h3 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.product-info .price {
+  color: #9b773b;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 12px;
+}
