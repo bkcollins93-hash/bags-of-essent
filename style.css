@@ -357,3 +357,40 @@ body .section .callout p {
     font-size: 14px !important;
     line-height: 1.6 !important;
 }
+/* Floating shopping cart */
+.floating-cart {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    width: 60px;
+    height: 60px;
+    background: #171411;
+    border: 2px solid #c5a15b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.cart-symbol {
+    font-size: 25px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #c5a15b;
+    color: #171411;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
