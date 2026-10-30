@@ -278,3 +278,10 @@ footer a,
 .hero {
     color: #f8f5ef;
 }
+.eyebrow,
+.hero-copy h1,
+.hero-copy h1 .gold,
+.gold,
+.art-caption {
+    color: #f8f5ef !important;
+}
