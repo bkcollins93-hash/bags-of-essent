@@ -285,3 +285,42 @@ footer a,
 .art-caption {
     color: #f8f5ef !important;
 }
+
+/* How to Pay page improvements */
+
+.page-hero h1 {
+    font-size: 38px;
+}
+
+.page-hero p {
+    font-size: 15px;
+}
+
+.container h2 {
+    font-size: 25px;
+}
+
+.container h3 {
+    font-size: 19px;
+}
+
+.card-body {
+    font-size: 14px;
+}
+
+.card-body p,
+.card-body li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.panel h3,
+.callout h3 {
+    color: #f8f5ef !important;
+}
+
+.panel p,
+.callout p {
+    font-size: 14px;
+    line-height: 1.7;
+}
