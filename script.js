@@ -64,15 +64,26 @@ const cartItemsContainer = document.getElementById("cart-items");
 const cartSubtotal = document.getElementById("cart-subtotal");
 const cartTotal = document.getElementById("cart-total");
 
+const productImages = {
+  "BOE-001": "images/IMG-20261029-WA0006.jpg",
+  "BOE-002": "images/IMG-20261029-WA0007.jpg",
+  "BOE-003": "images/IMG-20261029-WA0008.jpg",
+  "BOE-004": "images/IMG-20261029-WA0014.jpg",
+  "BOE-005": "images/IMG-20261029-WA0017.jpg",
+  "BOE-006": "images/IMG-20261029-WA0020.jpg"
+};
+
 function displayCart() {
   if (!cartItemsContainer) return;
 
   cartItemsContainer.innerHTML = "";
 
   if (cart.length === 0) {
-    cartItemsContainer.innerHTML = "<p>Your cart is empty. Browse our collection to add handbags.</p>";
+    cartItemsContainer.innerHTML =
+      "<p>Your cart is empty. Browse our collection to add handbags.</p>";
     cartSubtotal.textContent = "UGX 0";
     cartTotal.textContent = "UGX 0 + delivery";
+    updateFloatingCartCount();
     return;
   }
 
@@ -87,11 +98,22 @@ function displayCart() {
     itemElement.style.marginBottom = "15px";
 
     itemElement.innerHTML = `
-      <h3>${item.name}</h3>
-      <p>Price: ${formatPrice(item.price)}</p>
-      <p>Quantity: ${item.quantity}</p>
-      <p>Subtotal: <strong>${formatPrice(itemTotal)}</strong></p>
-      <button class="remove-from-cart" data-code="${item.code}">Remove</button>
+      <div class="cart-product">
+        <img src="${productImages[item.code]}" alt="${item.name}">
+        <div class="cart-product-details">
+          <h3>${item.name}</h3>
+          <p>Unit price: ${formatPrice(item.price)}</p>
+          <p>Subtotal: <strong>${formatPrice(itemTotal)}</strong></p>
+          <div class="quantity-controls">
+            <button class="quantity-minus" data-code="${item.code}">−</button>
+            <span>${item.quantity}</span>
+            <button class="quantity-plus" data-code="${item.code}">+</button>
+          </div>
+          <button class="remove-from-cart" data-code="${item.code}">
+            Remove
+          </button>
+        </div>
+      </div>
     `;
 
     cartItemsContainer.appendChild(itemElement);
@@ -100,13 +122,43 @@ function displayCart() {
   cartSubtotal.textContent = formatPrice(subtotal);
   cartTotal.textContent = formatPrice(subtotal) + " + delivery";
 
+  document.querySelectorAll(".quantity-plus").forEach(button => {
+    button.addEventListener("click", () => {
+      const item = cart.find(item => item.code === button.dataset.code);
+      if (item) {
+        item.quantity++;
+        saveCart();
+        displayCart();
+        updateFloatingCartCount();
+      }
+    });
+  });
+
+  document.querySelectorAll(".quantity-minus").forEach(button => {
+    button.addEventListener("click", () => {
+      const item = cart.find(item => item.code === button.dataset.code);
+      if (item) {
+        item.quantity--;
+        if (item.quantity <= 0) {
+          cart = cart.filter(cartItem => cartItem.code !== item.code);
+        }
+        saveCart();
+        displayCart();
+        updateFloatingCartCount();
+      }
+    });
+  });
+
   document.querySelectorAll(".remove-from-cart").forEach(button => {
     button.addEventListener("click", () => {
       cart = cart.filter(item => item.code !== button.dataset.code);
       saveCart();
       displayCart();
+      updateFloatingCartCount();
     });
   });
+
+  updateFloatingCartCount();
 }
 
 displayCart();
