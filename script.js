@@ -186,3 +186,27 @@ function updateFloatingCartCount() {
 }
 
 updateFloatingCartCount();
+// Show shopping cart items on the checkout page
+const checkoutItems = document.getElementById("checkout-cart-items");
+
+if (checkoutItems) {
+  const checkoutSubtotal = document.getElementById("checkout-subtotal");
+
+  if (cart.length === 0) {
+    checkoutItems.innerHTML = "<p>Your shopping cart is empty.</p>";
+  } else {
+    checkoutItems.innerHTML = cart.map(item => `
+      <div class="checkout-item">
+        <span>${item.name} × ${item.quantity}</span>
+        <strong>${formatPrice(item.price * item.quantity)}</strong>
+      </div>
+    `).join("");
+
+    const subtotal = cart.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
+
+    checkoutSubtotal.textContent = formatPrice(subtotal);
+  }
+}
