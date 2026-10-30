@@ -1,1 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Your shopping cart | Bags of Essent. Student project for BUC3106 at MUBS.">
+  <title>Your Cart | Bags of Essent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="disclaimer">
+  STUDENT PROJECT FOR BUC3106 AT MUBS · SAMPLE WEBSITE · PAYMENTS ARE NOT ACTIVE
+</div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      BAGS OF ESSENT
+      <small>EXCLUSIVELY FOR HER</small>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+      MENU ☰
+    </button>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html">Collection</a>
+      <a href="about.html">Our Story</a>
+      <a href="pay.html">How to Order</a>
+      <a href="policies.html">Policies</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Your selected pieces</div>
+    <h1>Your shopping <span class="gold">cart.</span></h1>
+    <p>Review your handbags and order total before proceeding.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div id="cart-items"></div>
+
+    <div id="cart-summary" class="panel" style="margin-top:25px;">
+      <h2>Order Summary</h2>
+      <p>Subtotal: <strong id="cart-subtotal">UGX 0</strong></p>
+      <p>Delivery fee: <strong>Confirmed based on location</strong></p>
+      <p>Order total: <strong id="cart-total">UGX 0 + delivery</strong></p>
+    </div>
+
+    <div style="margin-top:25px;">
+      <a href="products.html" class="btn">Continue Shopping</a>
+      <a href="pay.html" class="btn">Proceed to Checkout</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>Student project for BUC3106 at MUBS.</span>
+      <span>Demonstration website · Not accepting real payments.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
