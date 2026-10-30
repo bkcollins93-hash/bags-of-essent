@@ -1,24 +1,37 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="How to Pay and Order | Bags of Essent — Exclusively for Her. Student project for BUC3106 at MUBS.">
-  <title>How to Pay and Order | Bags of Essent</title>
+  <meta name="description" content="How to Order and Pay | Bags of Essent. BUC3106 student project at MUBS.">
+  <title>How to Order & Pay | Bags of Essent</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="disclaimer">STUDENT PROJECT FOR BUC3106 AT MUBS · SAMPLE WEBSITE · PAYMENTS ARE NOT ACTIVE</div>
+
+<div class="disclaimer">
+  STUDENT PROJECT FOR BUC3106 AT MUBS · SAMPLE WEBSITE · PAYMENTS ARE NOT ACTIVE
+</div>
+
 <header class="site-header">
   <div class="nav-wrap">
-    <a class="brand" href="index.html">BAGS OF ESSENT<small>EXCLUSIVELY FOR HER</small></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation">MENU ☰</button>
+    <a class="brand" href="index.html">
+      BAGS OF ESSENT
+      <small>EXCLUSIVELY FOR HER</small>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+      MENU ☰
+    </button>
+
     <nav aria-label="Main navigation">
-      <a href="index.html" >Home</a>
-      <a href="products.html" >Collection</a>
-      <a href="about.html" >Our Story</a>
+      <a href="index.html">Home</a>
+      <a href="products.html">Collection</a>
+      <a href="about.html">Our Story</a>
       <a href="pay.html" aria-current="page">How to Order</a>
-      <a href="policies.html" >Policies</a>
+      <a href="policies.html">Policies</a>
     </nav>
   </div>
 </header>
@@ -27,111 +40,238 @@
 
 <section class="page-hero">
   <div class="container">
-    <div class="eyebrow">Simple steps</div>
+    <div class="eyebrow">A simple shopping experience</div>
     <h1>How to order <span class="gold">& pay.</span></h1>
-    <p>Choose your favourite handbag, place your order and select how you would like to receive it.</p>
+    <p>Choose your favourite handbag and select the most convenient way to receive it.</p>
   </div>
 </section>
 
 <section class="section">
-  <div class="container split">
-    <div>
-      <h2>How to place your order</h2>
-      <ol class="steps">
-        <li><strong>Browse our collection.</strong><br>
-          <span class="note">Choose your handbag and add it to your shopping cart.</span>
-        </li>
-        <li><strong>Review your shopping cart.</strong><br>
-          <span class="note">Check your selected products, quantities and total before checkout.</span>
-        </li>
-        <li><strong>Choose your payment and delivery option.</strong><br>
-          <span class="note">Select shop pickup, payment on delivery or Mobile Money payment before delivery.</span>
-        </li>
-        <li><strong>Receive order confirmation.</strong><br>
-          <span class="note">For prepaid orders, confirmation is sent through WhatsApp and email. A payment screenshot may be requested as proof.</span>
-        </li>
-      </ol>
+  <div class="container">
+
+    <h2>How to place your order</h2>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-body">
+          <h3>1. Select your handbag</h3>
+          <p>Browse the collection, choose a handbag and add it to your shopping cart.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>2. Checkout</h3>
+          <p>Review your order, enter your contact details and choose how to receive and pay for it.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>3. Receive your order</h3>
+          <p>Collect from the shop or receive delivery within 24 hours. Prepaid orders receive WhatsApp and email confirmation.</p>
+        </div>
+      </article>
+
     </div>
 
-    <div class="panel">
-      <h3>Delivery information</h3>
+    <div class="panel" style="margin-top:25px;">
+      <h3>Delivery Information</h3>
       <p><strong>Delivery area:</strong> Kampala</p>
       <p><strong>Delivery time:</strong> Within 24 hours</p>
       <p><strong>Delivery charges:</strong> Depend on distance.</p>
       <p><strong>Shop pickup:</strong> Bweyogerere, after Unique Hotel.</p>
     </div>
+
   </div>
+</section>
 
-  <div class="container section" style="padding-top:20px">
-    <h2>Choose how to pay</h2>
-    <div class="cards">
+<section class="section">
+  <div class="container">
 
-      <article class="card">
-        <div class="card-body">
-          <h3>Shop Pickup</h3>
-          <p>Place your order and collect it from our shop in Bweyogerere, after Unique Hotel.</p>
-          <p class="price">PAY AT PICKUP</p>
-        </div>
-      </article>
+    <h2>Checkout demonstration</h2>
+    <p>Enter your details and select your preferred collection and payment options.</p>
 
-      <article class="card">
-        <div class="card-body">
-          <h3>Pay on Delivery</h3>
-          <p>Contact the business to arrange your order and pay when your handbag is delivered.</p>
-          <p class="price">PAY ON DELIVERY</p>
-        </div>
-      </article>
+    <form id="checkout-form" class="panel">
 
-      <article class="card">
-        <div class="card-body">
-          <h3>MTN Mobile Money</h3>
-          <p>Sample payment number: <strong>0792859991</strong></p>
-          <p>Account name: <strong>ATWINE GIDEON</strong></p>
-          <p class="note">Sample details only. No payment is processed.</p>
-        </div>
-      </article>
+      <h3>Customer Details</h3>
 
-      <article class="card">
-        <div class="card-body">
-          <h3>Airtel Money</h3>
-          <p>Sample merchant ID: <strong>726790</strong></p>
-          <p>Use the merchant payment option as described in the supplied payment instructions.</p>
-          <p class="note">Sample details only. No payment is processed.</p>
-        </div>
-      </article>
+      <label for="customer-name">Full name *</label>
+      <input id="customer-name" name="customerName" type="text" placeholder="Enter your full name" required>
 
-    </div>
+      <label for="customer-phone">Phone number *</label>
+      <input id="customer-phone" name="customerPhone" type="tel" placeholder="Enter your phone number" required>
 
-    <div class="callout">
-      <h3>Important student project notice</h3>
-      <p>This website is a student project for BUC3106 at MUBS. The payment details are displayed for demonstration purposes only. Payments are inactive. Do not send money through this website.</p>
-    </div>
-  </div>
+      <label for="customer-email">Email address (optional)</label>
+      <input id="customer-email" name="customerEmail" type="email" placeholder="Enter your email address">
 
-  <div class="container section" style="padding-top:10px">
-    <h2>Contact Bags of Essent</h2>
-    <div class="panel">
+      <h3 style="margin-top:25px;">Collection Method</h3>
+
+      <label for="collection-method">How would you like to receive your order? *</label>
+      <select id="collection-method" name="collectionMethod" required>
+        <option value="">Choose an option</option>
+        <option value="pickup">Pickup from the shop</option>
+        <option value="delivery">Delivery</option>
+      </select>
+
+      <div id="address-section" hidden>
+        <label for="delivery-address">Delivery location *</label>
+        <textarea id="delivery-address" name="deliveryAddress" rows="3" placeholder="Enter your area and delivery address"></textarea>
+      </div>
+
+      <h3 style="margin-top:25px;">Payment Method</h3>
+
+      <label for="payment-method">Choose how you would like to pay *</label>
+      <select id="payment-method" name="paymentMethod" required>
+        <option value="">Choose a payment method</option>
+        <option value="pickup-payment">Pay at shop when collecting</option>
+        <option value="cash-delivery">Pay on delivery</option>
+        <option value="mtn">MTN Mobile Money</option>
+        <option value="airtel">Airtel Money</option>
+      </select>
+
+      <div id="mtn-details" class="callout" hidden>
+        <h3>MTN Mobile Money</h3>
+        <p><strong>Number:</strong> 0792859991</p>
+        <p><strong>Account name:</strong> ATWINE GIDEON</p>
+        <p class="note">Sample payment details for demonstration only.</p>
+      </div>
+
+      <div id="airtel-details" class="callout" hidden>
+        <h3>Airtel Money</h3>
+        <p><strong>Merchant ID:</strong> 726790</p>
+        <p>Dial <strong>*185*9#</strong> and follow the merchant payment instructions.</p>
+        <p class="note">Sample payment details for demonstration only.</p>
+      </div>
+
+      <div class="callout" style="margin-top:20px;">
+        <p><strong>Order confirmation:</strong> After an order is submitted and the payment method selected, the business would contact the customer by WhatsApp, phone or email to confirm the order and payment.</p>
+      </div>
+
+      <button type="submit" class="btn">Submit Demonstration Order</button>
+
+      <p id="checkout-message" class="note" role="status" aria-live="polite"></p>
+
+    </form>
+
+    <div class="panel" style="margin-top:25px;">
+      <h3>Contact Bags of Essent</h3>
       <p><strong>WhatsApp:</strong> 0792859991</p>
       <p><strong>Calls:</strong> 0786775805</p>
       <p><strong>Shop:</strong> Bweyogerere, after Unique Hotel.</p>
     </div>
+
+    <div class="callout" style="margin-top:25px;">
+      <h3>Student Project Notice</h3>
+      <p>This website is a student demonstration project for BUC3106 at MUBS. Payment details are samples only. No real payments or orders are processed through this form.</p>
+    </div>
+
   </div>
 </section>
 
 </main>
 
-
-</main>
 <footer class="site-footer">
   <div class="container">
+
     <div class="footer-grid">
-      <div><a class="brand" href="index.html">BAGS OF ESSENT<small>EXCLUSIVELY FOR HER</small></a><p>Handbag styles for everyday confidence, special occasions and everything in between.</p></div>
-      <div><h3>Explore</h3><p><a href="products.html">Shop the collection</a></p><p><a href="about.html">About the brand</a></p><p><a href="policies.html">Policies</a></p></div>
-      <div><h3>Visit & Order</h3><p>Delivery area: Kampala only (project brief).</p><p>WhatsApp: <strong>0792 859 991</strong><br><span class="note">Business contact shown on supplied promotional artwork; confirm permission before public use.</span></p></div>
+
+      <div>
+        <a class="brand" href="index.html">
+          BAGS OF ESSENT
+          <small>EXCLUSIVELY FOR HER</small>
+        </a>
+        <p>Handbag styles for everyday confidence, special occasions and everything in between.</p>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <p><a href="products.html">Shop the collection</a></p>
+        <p><a href="about.html">About the brand</a></p>
+        <p><a href="policies.html">Policies</a></p>
+      </div>
+
+      <div>
+        <h3>Visit & Order</h3>
+        <p>Delivery area: Kampala.</p>
+        <p>WhatsApp: <strong>0792859991</strong></p>
+        <p>Calls: <strong>0786775805</strong></p>
+      </div>
+
     </div>
-    <div class="footer-bottom"><span>Student project for BUC3106 at MUBS.</span><span>Demonstration website · Not accepting real payments.</span></div>
+
+    <div class="footer-bottom">
+      <span>Student project for BUC3106 at MUBS.</span>
+      <span>Demonstration website · Not accepting real payments.</span>
+    </div>
+
   </div>
 </footer>
+
+<script>
+const collectionMethod = document.getElementById("collection-method");
+const paymentMethod = document.getElementById("payment-method");
+const addressSection = document.getElementById("address-section");
+const deliveryAddress = document.getElementById("delivery-address");
+const mtnDetails = document.getElementById("mtn-details");
+const airtelDetails = document.getElementById("airtel-details");
+const checkoutForm = document.getElementById("checkout-form");
+const checkoutMessage = document.getElementById("checkout-message");
+
+collectionMethod.addEventListener("change", function () {
+  const deliverySelected = this.value === "delivery";
+  addressSection.hidden = !deliverySelected;
+  deliveryAddress.required = deliverySelected;
+
+  if (!deliverySelected) {
+    deliveryAddress.value = "";
+  }
+
+  if (this.value === "pickup" && paymentMethod.value === "cash-delivery") {
+    paymentMethod.value = "pickup-payment";
+  }
+
+  if (this.value === "delivery" && paymentMethod.value === "pickup-payment") {
+    paymentMethod.value = "";
+  }
+
+  updatePaymentDetails();
+});
+
+paymentMethod.addEventListener("change", updatePaymentDetails);
+
+function updatePaymentDetails() {
+  mtnDetails.hidden = paymentMethod.value !== "mtn";
+  airtelDetails.hidden = paymentMethod.value !== "airtel";
+
+  const pickupPayment = paymentMethod.value === "pickup-payment";
+  const cashDelivery = paymentMethod.value === "cash-delivery";
+
+  if (pickupPayment && collectionMethod.value !== "pickup") {
+    paymentMethod.value = "";
+    mtnDetails.hidden = true;
+    airtelDetails.hidden = true;
+  }
+
+  if (cashDelivery && collectionMethod.value !== "delivery") {
+    paymentMethod.value = "";
+  }
+}
+
+checkoutForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  if (!checkoutForm.reportValidity()) {
+    return;
+  }
+
+  checkoutMessage.textContent =
+    "This is a demonstration only. Your information has not been sent and no order or payment has been processed.";
+});
+</script>
+
 <script src="script.js"></script>
+
 </body>
 </html>
