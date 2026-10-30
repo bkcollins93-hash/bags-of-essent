@@ -110,3 +110,27 @@ function displayCart() {
 }
 
 displayCart();
+// Floating shopping cart icon
+const floatingCart = document.createElement("a");
+floatingCart.href = "cart.html";
+floatingCart.className = "floating-cart";
+floatingCart.setAttribute("aria-label", "Open shopping cart");
+
+floatingCart.innerHTML = `
+  <span class="cart-symbol">🛒👜</span>
+  <span class="cart-count" id="floating-cart-count">0</span>
+`;
+
+document.body.appendChild(floatingCart);
+
+// Update cart item count
+function updateFloatingCartCount() {
+  const count = cart.reduce((total, item) => total + item.quantity, 0);
+  const countElement = document.getElementById("floating-cart-count");
+
+  if (countElement) {
+    countElement.textContent = count;
+  }
+}
+
+updateFloatingCartCount();
