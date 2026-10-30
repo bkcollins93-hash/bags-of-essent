@@ -270,3 +270,11 @@ section {
 .collection-description {
     color: #000000 !important;
 }
+/* Make text readable on dark backgrounds */
+header,
+header a,
+footer,
+footer a,
+.hero {
+    color: #f8f5ef;
+}
