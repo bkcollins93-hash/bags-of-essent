@@ -599,3 +599,21 @@ body .section .callout p {
     padding: 13px 22px;
     font-weight: bold;
 }
+/* Strong contrast for product names */
+.product-card h3,
+.product-card .product-name,
+.product-info h3 {
+    color: #171411 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+}
+
+/* Product prices */
+.product-card .price,
+.product-card .product-price {
+    color: #805719 !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+}
