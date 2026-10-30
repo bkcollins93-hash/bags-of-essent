@@ -324,3 +324,36 @@ footer a,
     font-size: 14px;
     line-height: 1.7;
 }
+
+/* Strong overrides for payment page */
+
+body .page-hero h1 {
+    color: #f8f5ef !important;
+    font-size: 34px !important;
+}
+
+body .section h2 {
+    color: #f8f5ef !important;
+    font-size: 24px !important;
+}
+
+body .section h3 {
+    color: #f8f5ef !important;
+    font-size: 18px !important;
+}
+
+body .section .card-body {
+    font-size: 14px !important;
+}
+
+body .section .card-body p,
+body .section .card-body li {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+body .section .panel p,
+body .section .callout p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
