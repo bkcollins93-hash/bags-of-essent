@@ -518,3 +518,84 @@ body .section .callout p {
         font-size: 13px;
     }
 }
+/* Elegant, presentation-friendly checkout theme */
+
+#checkout-form {
+    background: #f8f5ef !important;
+    color: #302b25 !important;
+    border: 1px solid #d8c49a;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 5px 18px rgba(50, 40, 25, 0.08);
+}
+
+#checkout-form h3 {
+    color: #6f542b !important;
+    font-family: Georgia, serif;
+}
+
+#checkout-form label {
+    color: #302b25 !important;
+    font-weight: 600;
+}
+
+#checkout-form input,
+#checkout-form select,
+#checkout-form textarea {
+    background: #ffffff !important;
+    color: #24201b !important;
+    border: 1px solid #cdbb98 !important;
+    border-radius: 7px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#checkout-form input::placeholder,
+#checkout-form textarea::placeholder {
+    color: #8b8174 !important;
+}
+
+#checkout-form input:focus,
+#checkout-form select:focus,
+#checkout-form textarea:focus {
+    outline: 2px solid #c5a15b;
+    border-color: #a78343 !important;
+}
+
+#checkout-form .callout {
+    background: #eee5d4 !important;
+    color: #302b25 !important;
+    border: 1px solid #d5bd8d;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+#checkout-form .callout h3,
+#checkout-form .callout p,
+#checkout-form .note {
+    color: #302b25 !important;
+}
+
+.checkout-order-summary {
+    background: #f8f5ef !important;
+    color: #302b25 !important;
+    border: 1px solid #c5a15b;
+}
+
+.checkout-order-summary h3,
+.checkout-item,
+.checkout-item strong,
+.checkout-total {
+    color: #302b25 !important;
+}
+
+#checkout-form .btn {
+    background: #a78343 !important;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 7px;
+    padding: 13px 22px;
+    font-weight: bold;
+}
