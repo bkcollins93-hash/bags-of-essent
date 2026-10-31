@@ -659,3 +659,41 @@ body .section .callout p {
     background: #a78343 !important;
     color: #ffffff !important;
 }
+/* Product image enlarged viewer */
+#image-viewer {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(23, 20, 17, 0.92);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#image-viewer.active {
+    display: flex;
+}
+
+#large-product-image {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border: 3px solid #c5a15b;
+    border-radius: 10px;
+    background: #f8f5ef;
+}
+
+#close-image-viewer {
+    position: absolute;
+    top: 15px;
+    right: 22px;
+    background: #c5a15b;
+    color: #171411;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 30px;
+    cursor: pointer;
+}
