@@ -210,3 +210,30 @@ if (checkoutItems) {
     checkoutSubtotal.textContent = formatPrice(subtotal);
   }
 }
+// Product image enlarged view
+const imageViewer = document.createElement("div");
+imageViewer.id = "image-viewer";
+imageViewer.innerHTML = `
+  <button id="close-image-viewer" aria-label="Close">&times;</button>
+  <img id="large-product-image" src="" alt="Enlarged handbag">
+`;
+document.body.appendChild(imageViewer);
+
+document.querySelectorAll(".product-card img").forEach(img => {
+  img.style.cursor = "zoom-in";
+
+  img.addEventListener("click", () => {
+    document.getElementById("large-product-image").src = img.src;
+    imageViewer.classList.add("active");
+  });
+});
+
+document.getElementById("close-image-viewer").addEventListener("click", () => {
+  imageViewer.classList.remove("active");
+});
+
+imageViewer.addEventListener("click", event => {
+  if (event.target === imageViewer) {
+    imageViewer.classList.remove("active");
+  }
+});
