@@ -641,3 +641,21 @@ body .section .callout p {
     font-weight: bold;
     margin-top: 10px;
 }
+/* Make the Want a particular style notice readable */
+.product-grid + .callout {
+    background: #eee5d4 !important;
+    color: #171411 !important;
+    border: 1px solid #c5a15b !important;
+}
+
+.product-grid + .callout,
+.product-grid + .callout * {
+    color: #171411 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.product-grid + .callout a {
+    background: #a78343 !important;
+    color: #ffffff !important;
+}
