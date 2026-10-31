@@ -842,3 +842,20 @@ body .section .callout p {
     margin: 0 0 12px !important;
     line-height: 1.6 !important;
 }
+
+/* Give the footer content proper side margins */
+.site-footer .container {
+    width: calc(100% - 40px) !important;
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 600px) {
+    .site-footer .container {
+        width: calc(100% - 40px) !important;
+    }
+}
