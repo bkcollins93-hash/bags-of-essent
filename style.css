@@ -821,3 +821,14 @@ body .section .callout p {
         gap: 24px;
     }
 }
+/* Improve heading visibility on How to Order page */
+.page-pay h1,
+.page-pay h2,
+.page-pay h3 {
+    color: #171411 !important;
+    opacity: 1 !important;
+}
+
+.page-pay p {
+    color: #302b25 !important;
+}
