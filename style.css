@@ -783,12 +783,14 @@ body .section .callout p {
     opacity: 1 !important;
 }
 
+
 /* Consistent footer alignment */
 .site-footer .container {
-    width: 90%;
-    max-width: 1100px;
+    width: 100%;
+    max-width: 1160px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 22px;
+    box-sizing: border-box;
 }
 
 .site-footer .footer-grid {
@@ -813,7 +815,7 @@ body .section .callout p {
     line-height: 1.6;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
     .site-footer .footer-grid {
         grid-template-columns: 1fr;
         gap: 24px;
