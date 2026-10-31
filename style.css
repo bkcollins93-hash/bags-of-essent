@@ -757,3 +757,37 @@ body .section .callout p {
     color: #302b25 !important;
     opacity: 1 !important;
 }
+
+/* Footer alignment improvement */
+.site-footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.site-footer .footer-grid > div {
+    text-align: left;
+}
+
+.site-footer .footer-grid h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.site-footer .footer-grid p {
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+.site-footer .footer-grid .brand {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 700px) {
+    .site-footer .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
