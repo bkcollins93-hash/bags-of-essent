@@ -792,22 +792,3 @@ body .section .callout p {
     }
 }
 
-/* Bring footer sections closer together */
-.site-footer .footer-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    max-width: 900px;
-    margin: 0 auto;
-    gap: 20px !important;
-}
-
-.site-footer .footer-grid > div {
-    text-align: left;
-}
-
-@media (max-width: 700px) {
-    .site-footer .footer-grid {
-        grid-template-columns: 1fr !important;
-        max-width: 100%;
-        gap: 25px !important;
-    }
-}
