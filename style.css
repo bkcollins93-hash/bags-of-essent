@@ -707,3 +707,39 @@ body .section .callout p {
     opacity: 1 !important;
     text-shadow: none !important;
 }
+/* FINAL PRODUCT TEXT CONTRAST FIX */
+
+.product-card {
+    background: #ffffff !important;
+}
+
+.product-card .product-info {
+    background: #ffffff !important;
+}
+
+.product-card .product-info h3 {
+    color: #171411 !important;
+    font-family: Georgia, serif !important;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.product-card .product-info p {
+    color: #302b25 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.product-card .product-info .code {
+    color: #805719 !important;
+}
+
+.product-card .product-info .price {
+    color: #805719 !important;
+    font-weight: 700 !important;
+}
