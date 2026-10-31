@@ -841,3 +841,26 @@ body .section .callout p {
     opacity: 1 !important;
     visibility: visible !important;
 }
+/* Improve readability of How to Order content */
+.page-pay .page-hero p,
+.page-pay .card,
+.page-pay .card-body,
+.page-pay .card-body p,
+.page-pay .panel,
+.page-pay .panel p,
+.page-pay .callout p {
+    color: #302b25 !important;
+    opacity: 1 !important;
+}
+
+/* Light backgrounds for order information */
+.page-pay .card,
+.page-pay .panel {
+    background: #fff !important;
+    border: 1px solid #e5dccb !important;
+}
+
+/* Make important labels clear */
+.page-pay strong {
+    color: #171411 !important;
+}
