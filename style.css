@@ -697,3 +697,13 @@ body .section .callout p {
     font-size: 30px;
     cursor: pointer;
 }
+/* Make product names clear and easy to read */
+.product-card h3,
+.product-info h3 {
+    color: #171411 !important;
+    font-family: Georgia, serif !important;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
