@@ -792,3 +792,11 @@ body .section .callout p {
     }
 }
 
+
+/* Lighter Ready to Choose panel on Home page */
+.container.split > .panel {
+    background: #eee5d4 !important;
+    border: 1px solid #d5bd8d !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(50, 40, 25, 0.08);
+}
