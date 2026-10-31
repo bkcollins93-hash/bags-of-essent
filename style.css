@@ -617,3 +617,27 @@ body .section .callout p {
     font-size: 17px !important;
     font-weight: 700 !important;
 }
+/* Product page notice after the product grid */
+.product-grid + .callout {
+    background: #f8f5ef !important;
+    color: #302b25 !important;
+    border: 1px solid #c5a15b !important;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.product-grid + .callout strong,
+.product-grid + .callout p {
+    color: #171411 !important;
+}
+
+.product-grid + .callout a {
+    display: inline-block;
+    background: #a78343 !important;
+    color: #ffffff !important;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
