@@ -800,3 +800,20 @@ body .section .callout p {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(50, 40, 25, 0.08);
 }
+
+/* Make footer headings visible */
+.site-footer .footer-grid h3 {
+    color: #c5a15b !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    font-family: Georgia, serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+/* Keep footer content readable */
+.site-footer .footer-grid p,
+.site-footer .footer-grid a {
+    color: #f8f5ef !important;
+    opacity: 1 !important;
+}
