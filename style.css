@@ -743,3 +743,17 @@ body .section .callout p {
     color: #805719 !important;
     font-weight: 700 !important;
 }
+
+/* About page text visibility fix */
+.split > div:first-child .eyebrow {
+    color: #a78343 !important;
+}
+
+.split > div:first-child h2 {
+    color: #171411 !important;
+}
+
+.split > div:first-child p {
+    color: #302b25 !important;
+    opacity: 1 !important;
+}
