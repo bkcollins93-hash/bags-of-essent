@@ -832,3 +832,12 @@ body .section .callout p {
 .page-pay p {
     color: #302b25 !important;
 }
+/* Student Project Notice heading */
+.page-pay .callout h3 {
+    color: #171411 !important;
+    font-family: Georgia, serif !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
