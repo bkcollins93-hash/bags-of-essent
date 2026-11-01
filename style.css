@@ -821,17 +821,6 @@ body .section .callout p {
         gap: 24px;
     }
 }
-/* Improve heading visibility on How to Order page */
-.page-pay h1,
-.page-pay h2,
-.page-pay h3 {
-    color: #171411 !important;
-    opacity: 1 !important;
-}
-
-.page-pay p {
-    color: #302b25 !important;
-}
 /* Student Project Notice heading */
 .page-pay .callout h3 {
     color: #171411 !important;
@@ -841,24 +830,19 @@ body .section .callout p {
     opacity: 1 !important;
     visibility: visible !important;
 }
-/* How to Order page: cream text on dark backgrounds */
-body.page-pay .page-hero p,
-body.page-pay .cards .card-body p,
-body.page-pay .section .panel p {
+/* HOW TO ORDER PAGE - TEXT VISIBILITY FIX */
+
+/* Introductory sentence */
+body.page-pay .page-hero p {
     color: #f8f5ef !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-/* Fix shopping step descriptions */
-body.page-pay .cards article.card .card-body p {
-    color: #f8f5ef !important;
-    opacity: 1 !important;
-    visibility: visible !important;
 }
 
-/* Fix contact information */
+/* Three shopping step descriptions */
+body.page-pay .cards .card-body p {
+    color: #f8f5ef !important;
+}
+
+/* Delivery and contact information */
 body.page-pay .section .panel p {
     color: #f8f5ef !important;
-    opacity: 1 !important;
-    visibility: visible !important;
 }
