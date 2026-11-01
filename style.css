@@ -841,23 +841,10 @@ body .section .callout p {
     opacity: 1 !important;
     visibility: visible !important;
 }
-/* How to Order page: improve visibility of order information */
-.page-pay .page-hero p,
-.page-pay .cards .card-body p,
-.page-pay .section > .container > .panel p {
-    color: #171411 !important;
-    opacity: 1 !important;
-}
-/* How to Order page: readable text in the first information section */
+/* How to Order page: cream text on dark backgrounds */
 body.page-pay .page-hero p,
-body.page-pay .section:first-of-type .cards .card-body p,
-body.page-pay .section:first-of-type .panel p {
-    color: #f8f5ef !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-body.page-pay .section:nth-of-type(2) .panel p {
+body.page-pay .cards .card-body p,
+body.page-pay .section .panel p {
     color: #f8f5ef !important;
     opacity: 1 !important;
     visibility: visible !important;
