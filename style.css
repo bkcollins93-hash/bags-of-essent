@@ -846,16 +846,3 @@ body.page-pay .cards .card-body p {
 body.page-pay .section .panel p {
     color: #f8f5ef !important;
 }
-/* Make shopping steps visible */
-body.page-pay main > section:nth-of-type(2) .cards .card-body p {
-    color: #f8f5ef !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-/* Make contact details visible */
-body.page-pay main > section:nth-of-type(3) > .container > div.panel p {
-    color: #f8f5ef !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
