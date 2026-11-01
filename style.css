@@ -849,3 +849,16 @@ body.page-pay .section .panel p {
     opacity: 1 !important;
     visibility: visible !important;
 }
+/* Fix shopping step descriptions */
+body.page-pay .cards article.card .card-body p {
+    color: #f8f5ef !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Fix contact information */
+body.page-pay .section .panel p {
+    color: #f8f5ef !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
