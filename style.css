@@ -841,3 +841,10 @@ body .section .callout p {
     opacity: 1 !important;
     visibility: visible !important;
 }
+/* How to Order page: improve visibility of order information */
+.page-pay .page-hero p,
+.page-pay .cards .card-body p,
+.page-pay .section > .container > .panel p {
+    color: #171411 !important;
+    opacity: 1 !important;
+}
