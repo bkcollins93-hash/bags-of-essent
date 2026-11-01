@@ -848,3 +848,17 @@ body .section .callout p {
     color: #171411 !important;
     opacity: 1 !important;
 }
+/* How to Order page: readable text in the first information section */
+body.page-pay .page-hero p,
+body.page-pay .section:first-of-type .cards .card-body p,
+body.page-pay .section:first-of-type .panel p {
+    color: #171411 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+body.page-pay .section:nth-of-type(2) .panel p {
+    color: #171411 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
