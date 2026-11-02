@@ -851,3 +851,20 @@ body.page-pay .section .panel p {
 .policy-copy li {
   color: #302b25 !important;
 }
+/* Policies page readability fix */
+.policy-copy p,
+.policy-copy li,
+.policy-copy strong {
+  color: #302b25 !important;
+  opacity: 1 !important;
+}
+
+.policy-copy .callout {
+  background: #eee5d4 !important;
+  color: #302b25 !important;
+  border-color: #c5a15b !important;
+}
+
+.policy-copy .callout strong {
+  color: #a78343 !important;
+}
