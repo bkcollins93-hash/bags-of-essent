@@ -846,4 +846,8 @@ body.page-pay .cards .card-body p {
 body.page-pay .section .panel p {
     color: #f8f5ef !important;
 }
-
+/* Make Policies page text readable */
+.policy-copy p,
+.policy-copy li {
+  color: #302b25 !important;
+}
