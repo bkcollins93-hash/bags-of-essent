@@ -869,15 +869,23 @@ body.page-pay .section .panel p {
   color: #a78343 !important;
 }
 
-/* Our Story - improve What We Stand For readability */
-.panel h3 {
-  color: #3b2b1b !important;
+
+/* OUR STORY - WHAT WE STAND FOR */
+body .section .container.split > .panel {
+    background: #eee5d4 !important;
+    border: 1px solid #d5bd8d !important;
 }
 
-.panel .list-clean li {
-  color: #3b2b1b !important;
+body .section .container.split > .panel h3 {
+    color: #302b25 !important;
 }
 
-.panel .list-clean li strong.gold {
-  color: #8a6428 !important;
+body .section .container.split > .panel ul.list-clean,
+body .section .container.split > .panel ul.list-clean li {
+    color: #302b25 !important;
+    opacity: 1 !important;
+}
+
+body .section .container.split > .panel ul.list-clean li strong.gold {
+    color: #8a6428 !important;
 }
