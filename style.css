@@ -868,3 +868,16 @@ body.page-pay .section .panel p {
 .policy-copy .callout strong {
   color: #a78343 !important;
 }
+
+/* Our Story - improve What We Stand For readability */
+.panel h3 {
+  color: #3b2b1b !important;
+}
+
+.panel .list-clean li {
+  color: #3b2b1b !important;
+}
+
+.panel .list-clean li strong.gold {
+  color: #8a6428 !important;
+}
