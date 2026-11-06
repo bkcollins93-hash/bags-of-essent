@@ -889,3 +889,10 @@ body .section .container.split > .panel ul.list-clean li {
 body .section .container.split > .panel ul.list-clean li strong.gold {
     color: #8a6428 !important;
 }
+/* Bags of Essent logo */
+.site-header .brand img {
+  width: 125px;
+  height: 55px;
+  object-fit: contain;
+  display: block;
+}
